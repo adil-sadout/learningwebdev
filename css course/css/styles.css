@@ -1,0 +1,478 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+a,ul,button{
+	text-decoration: none;
+	list-style: none;
+	border:none;
+}
+
+.product-button{
+	font-weight: bold;
+	background-color: green;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+a:visited{
+	color:inherit;
+}
+a:hover,a:active{
+	color: #00818a;
+}
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*************************Backdrop*********************************/
+.main-backdrop{
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1000;
+	display: none;
+	/*pointer-events:auto;*/
+}
+
+
+
+/******************************modal*************************/
+
+.main-modal{
+	position: fixed;
+	display: none;
+	z-index: 1100;
+	top: 20%;
+	left: 35%;
+	width: 30%;
+	background-color: white;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+
+.main-modal__actions,.main-modal__title{
+	text-align: center;
+}
+
+.main-modal__action{
+	color: white;
+	font:inherit;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+.main-modal__action--positive{
+	background-color: #0e4f1f;
+}
+a.main-modal__action--positive{
+	color: white;
+}
+
+
+
+.main-modal__action--positive:hover,.main-modal__action--positive:active{
+	background-color: green;
+	border-color: green;
+	color: black;
+}
+
+.main-modal__action--negative{
+	background-color: red;
+	border-color: red;
+}
+
+.main-modal__action--negative:hover,.main-modal__action--negative:active{
+	background-color: #ff5454;
+	border-color: #ff5454;
+}
+
+/*********************************Header**************************/
+
+.main-nav{
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	background-color: gray;
+	border-bottom: 1px solid black;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+.main-nav div{
+	padding-left: 100px;
+	display: inline-block;
+
+}
+
+.main-nav__logo{
+	color: white;
+	vertical-align: middle;
+}
+
+.main-nav__logo img{
+	width: 200px;
+}
+
+
+.main-nav__items{
+
+	width: 70%;
+	text-align: right;
+	vertical-align: middle;
+
+}
+
+.main-nav__item{
+	color: black;
+	padding: 0 30px;
+	display: inline-block;
+}
+
+.main-nav__item a{
+	color: black;
+}
+
+.main-nav__item a:hover{
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+.main-nav__item-login a{
+	color:white;
+	background-color: #00818a;
+	padding: 8px 8px;
+	border-radius: 10px;
+}
+.main-nav__item-login a:hover{
+	color: white;
+	background-color: #3c4245;
+	border:none;
+}
+
+
+
+
+
+/***********************************Main Footer********************************/
+.main-footer{
+	width: 100%;
+	background-color:  #272121;
+	box-sizing: border-box;
+}
+
+
+/********************************Main footer contact************************/
+
+.main-footer__lists{
+	width: 80%;
+	display: inline-block;
+	text-align: center;
+}
+
+.main-footer__list{
+	color: white;
+	padding: 20px;
+	text-align: center;
+	width: 19%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-footer__list li{
+	padding-top: 5px;
+}
+
+.main-footer__list li a{
+	color: white;
+}
+
+.main-footer__list li a:hover{
+	color: #00818a;
+}
+
+.main-footer__contact{
+	border-right: 2px solid white;
+	text-align: center;
+}
+
+
+/****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************Home Page**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+
+
+/********************************************************************************************* Main Section********************************************************************************/
+
+
+
+
+
+/**********************************************Background Image**********************************/
+.main-section__front{
+	position: relative;
+	margin-top: 82px;
+	height: 576px;
+	background: url("../images/frontimage.jpg") 50% no-repeat;
+	border-bottom: 1px solid black;
+}
+
+
+
+.main-section__front--cta{
+	color: white;
+	position: absolute;
+	background-color: #3C4245;
+	text-align: center;
+	max-width: 16%;
+	padding: 20px;
+	border-radius: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.main-section__front--cta:hover{
+	color: black;
+	background-color: #00818a;
+}
+
+/*******************************************Products*********************************************/
+
+.main-section__products{
+	text-align: center;
+	background-color: lightgray;
+	padding-bottom: 50px;
+	border-bottom: 1px solid black;
+}
+
+.chooseyourplan{
+	padding: 20px;
+}
+
+
+.main-section__product{
+	background-color: #5f6769;
+	display: inline-block;
+	width: 23%;
+	padding: 20px 10px;
+	margin: 0px 10px;
+	vertical-align: middle;
+}
+.main-section__product h2{
+	color: white;
+}
+.main-section__product h3{
+	color: gray;
+}
+
+.main-section__product h4{
+	font-size: 25px;
+}
+
+.main-section__product--recommended{
+	background-color: #00818a;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
+.main-section__product--recommended h1{
+	color: #00818a;
+	background-color: white;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+	border-radius: 7px;
+	margin: 10px 25px;
+}
+
+.main-section__product--recommended h2{
+	color: white;
+}
+
+.main-section__product--recommended h3{
+	color: yellow;
+}
+
+
+.main-section__product--recommended h4{
+	color: white;
+}
+
+.product-button{
+	background-color: #272121;
+	color: white;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+/************************************Main Section Benefits*****************************************/
+
+.main-section__benefits{
+	text-align: center;
+	color: white;
+	background-color: #5F6769;
+	padding: 50px 0 50px 0;
+	border-bottom: 1px solid black;
+}
+.main-section__benefits > h2{
+	padding-bottom: 40px;
+}
+
+.main-section__benefit--list{
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+
+}
+
+.main-section__benefit--image{
+	background: white;
+	width: 128px;
+	height: 128px;
+	border: 2px solid black;
+	border-radius: 15%;
+	margin: auto;
+}
+
+.main-section__benefit--image1{
+	background-image: url("../images/happycustomer.png");
+	background-size: 135%;
+	background-position: center;
+
+}
+
+.main-section__benefit--image2{
+	background-image: url("../images/fastcdn.jpg");
+	background-size: 135%;
+	background-position: center;
+}
+
+.main-section__benefit--image3{
+	background-image: url("../images/uptime.png");
+	background-size: contain;
+	background-position: center;
+}
+
+.main-section__benefit--list p{
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+
+
+/************************************ Main Section FAQ**************************************/
+
+.main-section__faq{
+	background-color: lightgray;
+	padding: 50px;
+	display: inline-block;
+	border-bottom: 1px solid black;
+}
+
+.main-section__faq--image{
+	height: 128px;
+	width: 128px;
+	border-radius: 50%;
+	background: url("../images/frontimage.jpg");
+	display: inline-block;
+}
+
+.main-section__faq--questions{
+	width: calc(90% - 128px);
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 50px;
+	border-left: 2px solid gray;
+}
+
+
+
+/****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************Product Page**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.backgroundimage{
+	background-image: url("../images/background.jpg");
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 81px;
+	z-index: -100;
+}
+
+
+
+.main-products{
+}
+
+
+.main-products__plan{
+	padding: 30px;
+	border: 3px solid darkgray;
+	margin: 100px 50px 20px 50px;
+	width: 50%;
+	background-color: royalblue;
+	position: relative;
+}
+
+
+.main-products__plan:hover{
+	border:3px solid red;
+	cursor: url("../images/poop.png") 16 16, auto;
+}
+
+.main-products__plan--title{
+	padding: 10px 0 5px 0;
+	color: white;
+}
+
+.main-products__plan--slogan{
+	padding: 10px 0 15px 0;
+	color: gray;
+
+}
+
+.main-products__plan--description{
+	background-color: white;
+	border:1px solid black;
+	padding: 10px;
+}
+
+
+
+
+.main-products__plan--plus .main-products__plan--title{
+	color: black;
+}
+
+.main-products__plan--plus{
+	text-align: right;
+	background-color: gold;
+	float: right;
+}
+
+.main-products__plan--plus--badge{
+	position: absolute;
+	top: 20px;
+	font-size: 12px;
+	padding: 10px;
+	background-color: #ff5454;
+	border-radius: 10px;
+	font-family: sans-serif;
+	color: white;
+}
+
+.clearfix{
+	clear:both;
+}
+
+.main-products__plan--premium{
+	background-color: darkgreen;
+}
