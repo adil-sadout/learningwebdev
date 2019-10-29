@@ -151,9 +151,11 @@ a.main-modal__action--positive{
 .main-nav__item--login a, .mobile-nav__item--login a{
 	color:white;
 	background-color: #00818a;
-	padding: 8px 8px;
+	padding: 0.5rem 2rem;
 	border-radius: 10px;
 }
+
+
 .main-nav__item--login a:hover, .main-nav__item--login a:active,
 .mobile-nav__item--login a:hover, .mobile-nav__item--login a:active{
 	color: white;
@@ -229,6 +231,8 @@ a.main-modal__action--positive{
 .mobile-nav__item a{
 	font-size: 1.5rem;
 }
+
+
 /***********************************Main Footer********************************/
 .main-footer{
 	width: 100%;
