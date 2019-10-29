@@ -29,6 +29,7 @@ a:hover,a:active{
 
 body{
 	font-family: 'Roboto', sans-serif;
+	margin-top: 82px;
 }
 
 /*************************Backdrop*********************************/
@@ -221,7 +222,6 @@ a.main-modal__action--positive{
 /**********************************************Background Image**********************************/
 .main-section__front{
 	position: relative;
-	margin-top: 82px;
 	height: 576px;
 	background: url("../images/frontimage.jpg") 50% no-repeat;
 	border-bottom: 1px solid black;
