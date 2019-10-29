@@ -7,46 +7,69 @@ var mobileNav = document.querySelector('.mobile-nav');
 var buttonXclose = document.querySelector('.close-xbutton');
 
 
-buttonXclose.addEventListener('click', function(){
-	mobileNav.style.display = 'none';
-	backdrop.style.display = 'none';
-});
-
-hamburgerButton.addEventListener('click', function(){
-	mobileNav.style.display = 'block';
-	backdrop.style.display = 'block';
-});
 
 
-for (var i = 0; i < selectPlanButtons.length; i++) {
-	selectPlanButtons[i].addEventListener('click', function() {
-		modal.style.display = 'block';
+
+
+
+
+
+/***************************** Real Code*************************/
+
+
+
+
+
+buttonXclose.addEventListener('click', function()
+	{
+		mobileNav.style.display = 'none';
+		backdrop.style.display = 'none';
+
+
+		modalNoButton.addEventListener('click', function()
+			{
+				modal.style.display = 'none';
+				backdrop.style.display = 'none';
+			});
+	}
+);
+
+
+
+
+
+
+
+
+hamburgerButton.addEventListener('click', function()
+	{
+		mobileNav.style.display = 'block';
 		backdrop.style.display = 'block';
-	})
+	}
+);
+
+
+
+
+
+
+for (var i = 0; i < selectPlanButtons.length; i++)
+{
+
+	selectPlanButtons[i].addEventListener('click', function()
+
+		{
+			modal.style.display = 'block';
+			backdrop.style.display = 'block';
+		}
+	);
 };
 
-backdrop.addEventListener('click', function(){
-	
-	backdrop.style.display = 'none';
 
-	if (modal.style.display != 'none') {
+backdrop.addEventListener('click', function()
+	{
+		backdrop.style.display = 'none';
 		modal.style.display = 'none';
-	}
-
-	if (mobileNav.style.display != 'none'){
 		mobileNav.style.display = 'none';
-	};
-	
-});
-
-
-modalNoButton.addEventListener('click', function(){
-	modal.style.display = 'none';
-	backdrop.style.display = 'none';
-});
-
-
-
-
-
-
+	}
+);
