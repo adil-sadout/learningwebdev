@@ -542,3 +542,27 @@ a.main-modal__action--positive{
 .main-products__plan--premium{
 	background-color: darkgreen;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********Class for javascript use******************/
+
+
+.open{
+	display: block;
+}
