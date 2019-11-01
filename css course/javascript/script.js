@@ -28,13 +28,13 @@ buttonXclose.addEventListener('click', function()
 	}
 );
 
-
+if (modalNoButton) {
 modalNoButton.addEventListener('click', function()
 	{
 		modal.classList.remove('open');
 		backdrop.classList.remove('open');
 	});
-
+}
 
 
 
@@ -69,7 +69,10 @@ for (var i = 0; i < selectPlanButtons.length; i++)
 backdrop.addEventListener('click', function()
 	{
 		backdrop.classList.remove('open');
-		modal.classList.remove('open');
 		mobileNav.classList.remove('open');
+		if (modal) {
+		modal.classList.remove('open');
+		}
+		
 	}
 );
