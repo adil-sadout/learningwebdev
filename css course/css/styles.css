@@ -295,10 +295,11 @@ a.main-modal__action--positive{
 
 /**********************************************Background Image**********************************/
 .main-section__front{
-	position: relative;
 	height: 576px;
-	background: url("../images/frontimage.jpg") 50% no-repeat;
+	background: url("../images/frontimage.jpg") 50%;
 	border-bottom: 1px solid black;
+	background-size: cover;
+	background-position: center, center;
 }
 
 
@@ -590,9 +591,10 @@ a.main-modal__action--positive{
 		position: absolute;
 		top: 20px;
 		right:20px;
-	
-		
+	}
 
+	.main-section__front{
+		background-image: linear-gradient(to bottom left ,darkgray,#0B2A45);
 	}
 }
 
@@ -608,6 +610,22 @@ a.main-modal__action--positive{
 		margin: auto;
 		width: 70%;
 		margin-top: 10px;
+
+	}
+
+
+	.main-section__faq{
+		padding: 20px;
+
+	}
+
+	.main-section__faq--image{
+		display: none;
+	}
+
+	.main-section__faq--questions{
+		display: block;
+		width: 95%
 
 	}
 
@@ -643,20 +661,6 @@ a.main-modal__action--positive{
 	}
 
 
-	.main-section__faq{
-		padding: 20px;
-
-	}
-
-	.main-section__faq--image{
-		display: none;
-	}
-
-	.main-section__faq--questions{
-		display: block;
-		width: 95%
-
-	}
 
 
 	.main-footer__contact{
