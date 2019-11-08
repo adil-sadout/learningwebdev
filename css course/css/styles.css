@@ -109,32 +109,33 @@ a.main-modal__action--positive{
 }
 
 .main-nav div{
-	padding-left: 100px;
 	display: inline-block;
 
 }
 
 .main-nav__logo{
+	display: inline-block;
+	width: 200px;
 	color: white;
 	vertical-align: middle;
 }
 
 .main-nav__logo img{
-	width: 200px;
+	width: 100%;
 }
 
 
 .main-nav__items{
 
-	width: 65%;
-	text-align: right;
+	width: 70%;
 	vertical-align: middle;
+	text-align: right;
 
 }
 
 .main-nav__item{
 	color: black;
-	padding: 0 30px;
+	padding: 0 15px;
 	display: inline-block;
 }
 
@@ -163,15 +164,17 @@ a.main-modal__action--positive{
 }
 
 
+/***********************************************************Toggle Button*************************/
 
 .toggle-button {
-	display: inline-block;
-	width: 3rem;
+	display: none;
+	width: 40px;
 	background-color: transparent;
 	cursor: pointer;
 	padding-top: 0;
 	padding-bottom: 0;
 	vertical-align: middle;
+
 }
 
 .toggle-button:focus{
@@ -180,10 +183,11 @@ a.main-modal__action--positive{
 
 .toggle-button__bar{
 	width: 100%;
-	height: 0.2rem;
+	height: 4px;
 	background-color: white;
 	display: block;
-	margin: 0.6rem 0;
+	margin: 8px 0;
+	border-radius: 10px;
 }
 
 
@@ -216,7 +220,7 @@ a.main-modal__action--positive{
 	width: 90%;
 	height: 100%;
 	list-style: none;
-	margin: 10% auto;
+	margin: 5% auto;
 	padding: 0;
 	text-align: center;
 }
@@ -241,16 +245,21 @@ a.main-modal__action--positive{
 /********************************Main footer contact************************/
 
 .main-footer__lists{
-	width: 80%;
+
 	display: inline-block;
 	text-align: center;
+	width: 80%;
 }
 
+
+
 .main-footer__list{
+	padding-top: 20px;
 	color: white;
-	padding: 20px;
+
 	text-align: center;
 	width: 19%;
+
 	display: inline-block;
 	vertical-align: top;
 }
@@ -299,7 +308,7 @@ a.main-modal__action--positive{
 	position: absolute;
 	background-color: #3C4245;
 	text-align: center;
-	max-width: 16%;
+	max-width: 25%;
 	padding: 20px;
 	border-radius: 10px;
 	top: 50%;
@@ -386,11 +395,11 @@ a.main-modal__action--positive{
 	text-align: center;
 	color: white;
 	background-color: #5F6769;
-	padding: 50px 0 50px 0;
+	padding: 30px 0;
 	border-bottom: 1px solid black;
 }
 .main-section__benefits > h2{
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 
 .main-section__benefit--list{
@@ -475,8 +484,8 @@ a.main-modal__action--positive{
 
 
 
-.main-products{
-}
+/*.main-products{
+}*/
 
 
 .main-products__plan{
@@ -535,6 +544,8 @@ a.main-modal__action--positive{
 	color: white;
 }
 
+
+/*************************Fix for the float left property of recommended product*****************************/
 .clearfix{
 	clear:both;
 }
@@ -542,6 +553,131 @@ a.main-modal__action--positive{
 .main-products__plan--premium{
 	background-color: darkgreen;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************************************************************************************************************** Mobile View**************************************************************************************************************************************************************************/
+
+@media screen and (max-width:1024px){
+	.main-nav{
+		height: auto;
+	}
+	.main-nav__item{
+		display: none;
+		float: right;
+	
+	}
+
+	.toggle-button{
+		display: inline-block;
+		position: absolute;
+		top: 20px;
+		right:20px;
+	
+		
+
+	}
+}
+
+	@media screen and (max-width:800px){
+	.main-section__front--cta{
+		font-size: 1.3rem;
+		max-width: 40%;
+	}
+
+
+		.main-section__product{
+		display: block;
+		margin: auto;
+		width: 70%;
+		margin-top: 10px;
+
+	}
+
+
+
+	.main-footer__contact{
+		border:none;
+		padding: 30px 0 0 30px;
+
+	}
+
+
+	.main-footer__lists .main-footer__list{
+		width: 45%;
+		height: 200px;
+
+	}
+}
+
+
+
+/****************************************Benefits List Part*********************/
+@media screen and (max-width:600px){
+	.main-section__benefit--list{
+		display: block;
+		margin: auto;
+		width: 100%;
+
+	}
+
+	.main-section__benefit--list p{
+		padding-bottom: 10px; 
+	}
+
+
+	.main-section__faq{
+		padding: 20px;
+
+	}
+
+	.main-section__faq--image{
+		display: none;
+	}
+
+	.main-section__faq--questions{
+		display: block;
+		width: 95%
+
+	}
+
+
+	.main-footer__contact{
+		display: none;
+	}
+
+	.main-footer__lists{
+		width: 100%;
+	}
+	.main-footer__list{
+		width: 50%;
+		height: 200px;
+
+	}
+
+
+
+
+
+}
+
 
 
 
