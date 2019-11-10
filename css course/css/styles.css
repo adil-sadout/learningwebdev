@@ -295,6 +295,7 @@ a.main-modal__action--positive{
 
 /**********************************************Background Image**********************************/
 .main-section__front{
+	position: relative;
 	height: 576px;
 	background: url("../images/frontimage.jpg") 50%;
 	border-bottom: 1px solid black;
