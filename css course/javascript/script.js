@@ -5,7 +5,7 @@ var modalNoButton = document.querySelector('.main-modal__action--negative');
 var hamburgerButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 var buttonXclose = document.querySelector('.close-xbutton');
-
+var recommendedBadge = document.querySelector('.main-products__plan--plus--badge');
 
 
 
