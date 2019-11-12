@@ -723,13 +723,18 @@ a.main-modal__action--positive{
 
 /***************************Video Part***************/
 
+.video-container{
+	position: relative;
+}
+
 .testimonials-video{
 	position: relative;
 
-	height: 700px;
+	height: 750px;
 }
 
 .testimonials-video video{
+	width: 50%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -753,7 +758,7 @@ a.main-modal__action--positive{
 .testimonials-client{
 	display: inline-block;
 	width: 30%;
-	height: 400px;
+	height: 450px;
 	padding: 24px;
 	margin: 2rem;
 	border:2px solid black;
@@ -785,7 +790,7 @@ a.main-modal__action--positive{
 	font-size: 2rem;
 	color: #233466;
 	font-weight: bold;
-	padding: 24px;
+	padding: 30px 10px;
 }
 
 
@@ -857,7 +862,23 @@ a.main-modal__action--positive{
 	.main-section__front{
 		background-image: linear-gradient(to bottom left ,darkgray,#0B2A45);
 	}
+
+
+	.testimonials-video{
+	 height: 500px;
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
 
 	@media screen and (max-width:800px){
 	.main-section__front--cta{
@@ -928,6 +949,18 @@ a.main-modal__action--positive{
 	}
 
 
+
+
+
+
+	/**************testimonial page********/
+
+	.testimonials-client{
+		display: block;
+		margin: 25px auto;
+		width: 50%;
+	}
+
 }
 
 
@@ -973,6 +1006,15 @@ a.main-modal__action--positive{
 	}
 
 
+	.testimonials-video{
+	 height: 400px;
+	}
+
+
+	.testimonials-client{
+		width: 70%;
+	}
+
 
 
 
@@ -983,7 +1025,9 @@ a.main-modal__action--positive{
 
 
 
-
+	.testimonials-video{
+	 height: 300px;
+	}
 
 
 
