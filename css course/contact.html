@@ -76,10 +76,30 @@
 
 <div class="contact-form__container">
 	<div class="contact-form__header">
-		
+		<h1>Contact Us</h1>
 	</div>
 	<div class="contact-form__main">
-		
+		<p>Please Fill Out The Form</p>
+		<div class="contact-form__main--form">
+			<form action="/action_page.php" id="contactusform">
+				<select name="Subject">
+					<option value="">Select Subject</option>
+					<option value="1">Service Inquiry</option>
+					<option value="2">Appointment</option>
+					<option value="3">Custom Offer</option>
+					<option value="4">Other</option>
+				</select><br>
+
+				<input class="contact-form__main--form-name" type="text" name="Fullname" placeholder="Name" required>
+				<input class="contact-form__main--form-email" type="email" name="Email" placeholder="Email" required>
+				<input class="contact-form__main--form-number" type="tel" name="Phone" placeholder="Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><small>Format: 123-456-7890</small><br>
+				
+				<textarea placeholder="Comment...." required></textarea>
+
+				<input class="contact-form__main--form-button" type="submit" name="submit">
+
+			</form>
+		</div>
 	</div>
 </div>
 
