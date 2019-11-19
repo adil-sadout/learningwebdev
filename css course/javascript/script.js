@@ -6,7 +6,7 @@ var hamburgerButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 var buttonXclose = document.querySelector('.close-xbutton');
 var recommendedBadge = document.querySelector('.main-products__plan--plus--badge');
-var signButton = document.querySelector('main-nav__item--login');
+var signButton = document.querySelector('main-nav__item--signup');
 
 
 
@@ -80,10 +80,9 @@ backdrop.addEventListener('click', function()
 
 
 
-// main-nav__item--login.addEventListener('click', function()
-// {
-// 	backdrop.classList.add('open');
-// 	modal.classList.add('open');
-// }
-
-// );
+signButton.addEventListener('click', function()
+	{
+		mobileNav.classList.add('open');
+		backdrop.classList.add('open');
+	}
+);
