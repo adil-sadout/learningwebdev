@@ -148,7 +148,7 @@ a.main-modal__action--positive{
 	border-bottom: 2px solid white;
 }
 
-.main-nav__item--login a, .mobile-nav__item--login a{
+.main-nav__item--login button, .mobile-nav__item--login button{
 	color:white;
 	background-color: #00818a;
 	padding: 0.5rem 2rem;
@@ -156,11 +156,12 @@ a.main-modal__action--positive{
 }
 
 
-.main-nav__item--login a:hover, .main-nav__item--login a:active,
-.mobile-nav__item--login a:hover, .mobile-nav__item--login a:active{
+.main-nav__item--login button:hover, .main-nav__item--login button:active,
+.mobile-nav__item--login button:hover, .mobile-nav__item--login button:active{
 	color: white;
 	background-color: #3c4245;
 	border:none;
+	cursor: pointer;
 }
 
 
