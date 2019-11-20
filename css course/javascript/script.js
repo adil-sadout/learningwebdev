@@ -83,6 +83,10 @@ backdrop.addEventListener('click', function()
 		if (signinPopup) {
 			signupPopup.classList.remove('open');
 		}
+
+		if (signinPopup) {
+			signinPopup.classList.remove('open');
+		}
 		
 	}
 );
