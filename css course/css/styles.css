@@ -96,12 +96,12 @@ a.main-modal__action--positive{
 	border-color: #ff5454;
 }
 
-/**************************Main signup******************************/
+/**************************Main signup POPUP******************************/
 
 .main-signup{
 	position: fixed;
-/*	display: none;
-*/	z-index: 30;
+	display: none;
+	z-index: 30;
 	top: 25%;
 	left: 35%;
 	width: 30%;
@@ -168,12 +168,12 @@ a.main-modal__action--positive{
 
 
 
-/******************************Sign In*******************************/
+/******************************Sign In POPUP*******************************/
 
-.main-signup{
+.main-signin{
 	position: fixed;
-/*	display: none;
-*/	z-index: 30;
+	display: none;
+	z-index: 30;
 	top: 25%;
 	left: 35%;
 	width: 30%;
@@ -184,19 +184,14 @@ a.main-modal__action--positive{
 	border-radius: 3px;
 	text-align: center;
 }
-.main-signup--title{
+.main-signin--title{
 	font-size: 2rem;
 }
 
-.main-signup--small-text{
-	padding: 10px;
-	font-size: 0.9rem;
-}
 
 
 
-
-.main-signup__form input{
+.main-signin__form input{
 	width: 60%;
 	height: 30px;
 	display: block;
@@ -205,16 +200,16 @@ a.main-modal__action--positive{
 	border-bottom: 1px gray dotted;
 }
 
-.main-signup__form input:focus{
+.main-signin__form input:focus{
 	border-bottom: 2px solid #00818a;
 }
 
 
-.main-signup__actions{
+.main-signin__actions{
 
 }
 
-.main-signup__actions button{
+.main-signin__actions button{
 	background-color: #00818a;
 	color: white;
 	border-radius: 3px;
@@ -224,14 +219,14 @@ a.main-modal__action--positive{
 }
 
 
-.main-signup__actions--signin{
+.main-signin__actions--signin{
  	padding: 15px;
  	background-color: lightgray;
 }
 
 
 
-.main-signup__actions--signin p,.main-signup__actions--signin button{
+.main-signin__actions--signin p,.main-signin__actions--signin button{
 	display: inline-block;
 }
 
