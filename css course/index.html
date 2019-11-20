@@ -28,22 +28,46 @@
 	</div>
 </div>
 
-<!-- 
+
 <div class="main-signup">
 	<h2 class="main-signup--title">Create an account</h2>
+	<p class="main-signup--small-text">Become a part of out community!</p>
 	<div>
 		<form class="main-signup__form">
-			<input type="text" name="firstname" placeholder="First Name">
-			<input type="Email" name="Email" placeholder="Email">
-			<input type="password" name="password" placeholder="new password">
+			<input type="text" name="firstname" placeholder="First Name" required>
+			<input type="Email" name="Email" placeholder="Email" required>
+			<input type="password" name="password" placeholder="new password" required>
+			<div class="main-signup__actions">
+				<button class="main-signup__action main-signup__action--join">Create a new account</button><br>
+				<div class="main-signup__actions--signin">
+					<p>Already have an account?</p>
+					<button class="main-signup__action main-signup__action--signin">Sign In</button>
+				</div>
+			</div>
 		</form>
-		<div class="main-modal__actions">
-			<button class="main-modal__action--join">Join</button>
-			<button class="main-modal__action--signin">Sign In</button>
-		</div>
+		
 	</div>
 </div>
- -->
+
+
+<div class="main-signup">
+	<h2 class="main-signup--title">Login</h2>
+	<div>
+		<form class="main-signup__form">
+			<input type="Email" name="Email" placeholder="Email" required>
+			<input type="password" name="password" placeholder="new password" required>
+			<div class="main-signup__actions">
+				<button class="main-signup__action main-signup__action--join">Sign In</button><br>
+				<div class="main-signup__actions--signin">
+					<p>Don't have an account?</p>
+					<button class="main-signup__action main-signup__action--signin">Sign Up</button>
+				</div>
+			</div>
+		</form>
+		
+	</div>
+</div>
+
 	<!------------------Header------------------>
 
 	<header>
