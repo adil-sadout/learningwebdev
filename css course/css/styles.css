@@ -219,14 +219,14 @@ a.main-modal__action--positive{
 }
 
 
-.main-signin__actions--signin{
+.main-signin__actions--signup{
  	padding: 15px;
  	background-color: lightgray;
 }
 
 
 
-.main-signin__actions--signin p,.main-signin__actions--signin button{
+.main-signin__actions--signup p,.main-signin__actions--signup button{
 	display: inline-block;
 }
 

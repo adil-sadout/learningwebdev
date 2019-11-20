@@ -8,6 +8,12 @@ var buttonXclose = document.querySelector('.close-xbutton');
 var recommendedBadge = document.querySelector('.main-products__plan--plus--badge');
 var signButton = document.querySelector('.main-nav__item--signup');
 
+var signupPopup = document.querySelector('.main-signup');
+var signinPopup = document.querySelector('.main-signin');
+
+var signinButtonOnSignupPopup = document.querySelector('.signup__action--signin');
+var signupButtonOnSigninPopup = document.querySelector('.signin__action--signup');
+
 
 
 
@@ -73,6 +79,10 @@ backdrop.addEventListener('click', function()
 		if (modal) {
 		modal.classList.remove('open');
 		}
+
+		if (signinPopup) {
+			signupPopup.classList.remove('open');
+		}
 		
 	}
 );
@@ -80,9 +90,21 @@ backdrop.addEventListener('click', function()
 
 
 
+
+
+
 signButton.addEventListener('click', function()
 	{
 		backdrop.classList.add('open');
-		modal.classList.add('open');
+		signupPopup.classList.add('open');
+	}
+);
+
+
+signinButtonOnSignupPage.addEventListener('click', function()
+	{
+		backdrop.classList.add('open');
+		signupPopup.classList.remove('open');
+		signinPopup.classList.add('open');
 	}
 );
