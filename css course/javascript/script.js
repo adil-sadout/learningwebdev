@@ -11,8 +11,8 @@ var signButton = document.querySelector('.main-nav__item--signup');
 var signupPopup = document.querySelector('.main-signup');
 var signinPopup = document.querySelector('.main-signin');
 
-var signinButtonOnSignupPopup = document.querySelector('.signup__action--signin');
-var signupButtonOnSigninPopup = document.querySelector('.signin__action--signup');
+var signinButtonOnSignupPopup = document.querySelector('.main-signup__action--signin');
+var signupButtonOnSigninPopup = document.querySelector('.main-signin__action--signup');
 
 
 
@@ -101,10 +101,18 @@ signButton.addEventListener('click', function()
 );
 
 
-signinButtonOnSignupPage.addEventListener('click', function()
+signinButtonOnSignupPopup.addEventListener('click', function()
 	{
-		backdrop.classList.add('open');
 		signupPopup.classList.remove('open');
 		signinPopup.classList.add('open');
 	}
 );
+
+
+signupButtonOnSigninPopup.addEventListener('click', function()
+	{
+		signinPopup.classList.remove('open');
+		signupPopup.classList.add('open');
+	}
+);
+
