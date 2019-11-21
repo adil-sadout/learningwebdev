@@ -7,6 +7,8 @@ var mobileNav = document.querySelector('.mobile-nav');
 var buttonXclose = document.querySelector('.close-xbutton');
 var recommendedBadge = document.querySelector('.main-products__plan--plus--badge');
 var signButton = document.querySelector('.main-nav__item--signup');
+var signButtonMobile = document.querySelector('.mobile-nav__item--login');
+
 
 var signupPopup = document.querySelector('.main-signup');
 var signinPopup = document.querySelector('.main-signin');
@@ -92,7 +94,14 @@ backdrop.addEventListener('click', function()
 );
 
 
-
+signButtonMobile.addEventListener('click', function()
+	{
+		modal.classList.remove('open');
+		mobileNav.classList.remove('open');
+		backdrop.classList.add('open');
+		signupPopup.classList.add('open');
+	}
+);
 
 
 
