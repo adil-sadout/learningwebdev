@@ -103,8 +103,8 @@ a.main-modal__action--positive{
 	display: none;
 	z-index: 30;
 	top: 25%;
-	left: 35%;
-	width: 30%;
+	left: 30%;
+	width: 40%;
 	background-color: white;
 	padding: 1rem;
 	border: 1px solid transparent;
@@ -175,8 +175,8 @@ a.main-modal__action--positive{
 	display: none;
 	z-index: 30;
 	top: 25%;
-	left: 35%;
-	width: 30%;
+	left: 30%;
+	width: 40%;
 	background-color: white;
 	padding: 1rem;
 	border: 1px solid transparent;
@@ -1203,6 +1203,24 @@ input.contact-form__main--form-button{
 		width: 70%;
 	}
 
+
+
+
+
+
+
+
+	/******************************Signup/in Popup***************/
+	.main-signup{
+		left: 20%;
+		width: 60%
+	}
+
+	.main-signin{
+		left: 20%;
+		width: 60%
+	}
+
 }
 
 
@@ -1262,6 +1280,21 @@ input.contact-form__main--form-button{
 	.contact-form__container{
 		width: 80%;
 	}
+
+
+
+
+	.main-signup{
+		left: 10%;
+		width: 80%
+	}
+
+
+	.main-signin{
+		left: 10%;
+		width: 80%
+	}
+
 
 
 
