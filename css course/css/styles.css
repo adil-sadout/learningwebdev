@@ -997,6 +997,15 @@ a.main-modal__action--positive{
 	margin: 5px 5px 5px 0;
 }
 
+.contact-form__main--form-input{
+	background-color: none;
+}
+
+
+.contact-form__main--form-input input:focus{
+	outline: 1px solid gray;
+	background-color: lightgreen;
+}
 
 
 
