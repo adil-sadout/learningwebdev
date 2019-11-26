@@ -357,8 +357,8 @@ a.main-modal__action--positive{
 	font-size: 2rem;
 	padding: 1rem;
 	position: absolute;
-	top: 10%;
-	left: 90%;
+	top: 0;
+	right: 0;
 	cursor: pointer;
 }
 
