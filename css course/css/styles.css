@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
-}
+	}
 
 
 
@@ -239,16 +239,20 @@ a.main-modal__action--positive{
 
 .main-nav{
 	width: 100%;
+	height: 82px;
 	font-family: 'Montserrat', sans-serif;
 	background-color: gray;
 	border-bottom: 1px solid black;
 	position: fixed;
 	top: 0;
 	z-index: 10;
+	
+
 }
 
 .main-nav div{
 	display: inline-block;
+
 
 }
 
@@ -269,6 +273,7 @@ a.main-modal__action--positive{
 	width: 70%;
 	vertical-align: middle;
 	text-align: right;
+	overflow: hidden;
 
 }
 
@@ -276,6 +281,7 @@ a.main-modal__action--positive{
 	color: black;
 	padding: 0 15px;
 	display: inline-block;
+	overflow: hidden;
 }
 
 .main-nav__item a, .mobile-nav__item a{
@@ -909,7 +915,7 @@ a.main-modal__action--positive{
 	margin: 2rem;
 	border:2px solid black;
 	background-color: white;
-	vertical-align: top;
+	overflow: hidden;
 }
 
 .testimonials-client__picture{
