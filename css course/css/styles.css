@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
+	overflow: hidden;
 }
 
 a,ul,button{
@@ -727,8 +727,7 @@ a.main-modal__action--positive{
 	border: 3px solid darkgray;
 	margin: 100px 50px 10px 50px;
 	width: 60%;
-	background-color: royalblue;
-	position: relative;
+
 }
 
 
@@ -765,6 +764,7 @@ a.main-modal__action--positive{
 	text-align: right;
 	background-color: gold;
 	float: right;
+	position: relative;
 }
 /***********this forces the cursor to change image******/
 .main-products__plan.main-products__plan--plus{
@@ -772,13 +772,18 @@ a.main-modal__action--positive{
 }/*******************************************************/
 .main-products__plan--plus--badge{
 	position: absolute;
-	top: 20px;
+	top: 0;
+	left: 0;
 	font-size: 12px;
 	padding: 10px;
+	width: 12rem;
+	text-align: center;
 	background-color: #ff5454;
-	border-radius: 10px;
 	font-family: sans-serif;
 	color: white;
+	overflow: hidden;
+	transform: rotate(-45deg) translate(-30%, -50%);
+
 }
 
 
@@ -792,9 +797,9 @@ a.main-modal__action--positive{
 }
 
 
-
-
-
+.main-products__plan--free{
+	background-color: royalblue;
+}
 
 
 
