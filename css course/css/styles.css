@@ -2,8 +2,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow: hidden;
+	overflow-x: hidden;
 }
+
+
+
 
 a,ul,button{
 	text-decoration: none;
@@ -725,7 +728,7 @@ a.main-modal__action--positive{
 .main-products__plan{
 	padding: 30px;
 	border: 3px solid darkgray;
-	margin: 100px 50px 10px 50px;
+	margin: 30px;
 	width: 60%;
 
 }
