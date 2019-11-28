@@ -886,11 +886,11 @@ a.main-modal__action--positive{
 }
 
 .testimonials-intro__content{
-	margin: 9rem 0 5rem 0;
+	margin: 4rem 0;
 }
 
 .testimonials-intro__content h1{
-	margin: 2rem;
+	margin: 1rem 0 2rem 0;
 	font-size: 3rem;
 }
 
@@ -1012,7 +1012,7 @@ a.main-modal__action--positive{
 .contact-form__header{
 	font-size: 2rem;
 	text-align: center;
-	margin: 150px 0 50px 0;
+	margin: 50px 0;
 }
 
 
