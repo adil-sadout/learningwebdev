@@ -728,6 +728,14 @@ a.main-modal__action--positive{
 }
 
 
+.main-products__plan--container{
+		transform: skew(5deg);
+}
+
+.main-products__plan--container-recommended{
+		transform: skew(-5deg);
+}
+
 
 
 
@@ -736,6 +744,7 @@ a.main-modal__action--positive{
 	border: 3px solid darkgray;
 	margin: 30px;
 	width: 60%;
+
 
 }
 
@@ -810,9 +819,18 @@ a.main-modal__action--positive{
 	background-color: royalblue;
 }
 
+.main-products__plan--free h2, .main-products__plan--free h3, .main-products__plan--free p{
+	transform: skew(-5deg);
+}
+
+.main-products__plan--premium h2, .main-products__plan--premium h3, .main-products__plan--premium p{
+	transform: skew(-5deg);
+}
 
 
-
+.main-products__plan--plus >h2, .main-products__plan--plus h3, .main-products__plan--plus p{
+	transform: skew(5deg);
+}
 
 
 
