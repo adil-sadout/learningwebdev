@@ -53,6 +53,9 @@ body{
 .main-modal{
 	position: fixed;
 	display: none;
+	opacity: 0;
+	transform: translateY(-3rem);
+	transition: opacity 400ms ease-in, transform 400ms ease-in;
 	z-index: 30;
 	top: 20%;
 	left: 35%;
@@ -104,8 +107,11 @@ a.main-modal__action--positive{
 .main-signup{
 	position: fixed;
 	display: none;
+	opacity: 0;
+	transform: translateY(-2rem);
+	transition: opacity 400ms, transform 400ms;
 	z-index: 30;
-	top: 25%;
+	top: 20%;
 	left: 30%;
 	width: 40%;
 	background-color: white;
@@ -1380,4 +1386,8 @@ input.contact-form__main--form-button{
 
 .open{
 	display: block;
+	opacity: 1;
+	transform: translateY(0rem);
 }
+
+

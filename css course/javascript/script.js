@@ -65,8 +65,13 @@ for (var i = 0; i < selectPlanButtons.length; i++)
 	selectPlanButtons[i].addEventListener('click', function()
 
 		{
-			modal.classList.add('open');
-			backdrop.classList.add('open');
+			modal.style.display ='block';
+				setTimeout(function()
+				{
+					modal.classList.add('open');
+				backdrop.classList.add('open');
+				},10);
+			
 		}
 	);
 };
