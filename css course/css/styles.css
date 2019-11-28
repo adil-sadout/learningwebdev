@@ -655,12 +655,15 @@ a.main-modal__action--positive{
 
 
 /************************************ Main Section FAQ**************************************/
-
-.main-section__faq{
+.main-section{
 	background-color: lightgray;
+	border-bottom: 1px solid black;
+}
+.main-section__faq{
+	
 	padding: 50px;
 	display: inline-block;
-	border-bottom: 1px solid black;
+	
 }
 
 .main-section__faq--image{
@@ -1127,7 +1130,11 @@ input.contact-form__main--form-button{
 
 @media screen and (max-width:1024px){
 	.main-nav{
-		height: auto;
+		height: 82px;
+	}
+
+	.main-nav__items ul{
+		display: none !important;
 	}
 	.main-nav__item{
 		display: none;
