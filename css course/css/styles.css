@@ -252,7 +252,7 @@ a.main-modal__action--positive{
 	position: fixed;
 	top: 0;
 	z-index: 10;
-	
+	vertical-align: middle;
 
 }
 
@@ -275,12 +275,14 @@ a.main-modal__action--positive{
 
 
 .main-nav__items{
-
 	width: 70%;
 	vertical-align: middle;
 	text-align: right;
 	overflow: hidden;
+}
 
+.main-nav__items ul{
+	padding: 20px 0;
 }
 
 .main-nav__item{
@@ -288,6 +290,7 @@ a.main-modal__action--positive{
 	padding: 0 15px;
 	display: inline-block;
 	overflow: hidden;
+
 }
 
 .main-nav__item a, .mobile-nav__item a{
@@ -298,6 +301,12 @@ a.main-modal__action--positive{
 	color: white;
 	border-bottom: 2px solid white;
 }
+
+
+.main-nav__item--login {
+	animation: wiggle 200ms 50ms 4 alternate none;
+}
+
 
 .main-nav__item--login button, .mobile-nav__item--login button{
 	color:white;
@@ -1368,6 +1377,21 @@ input.contact-form__main--form-button{
 
 
 
+
+
+/*******************ANIMATIONS***********************/
+
+@keyframes wiggle{
+	0%{
+		transform: rotateZ(-10deg);
+	}
+/*	50%{
+		transform: rotateZ(0deg);
+	}*/
+	100%{
+		transform: rotateZ(10deg);
+	}
+}
 
 
 
